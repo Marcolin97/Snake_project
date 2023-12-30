@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game Difficulty Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="difficulty-selection">
+        <h1>Select Difficulty:</h1>
+        <button onclick="startGame('easy')">Easy</button>
+        <button onclick="startGame('intermediate')">Intermediate</button>
+        <button onclick="startGame('difficult')">Difficult</button>
+    </div>
+
+    <script src="common_script.js"></script>
+    <script>
+        function startGame(difficulty) {
+            
+            document.cookie = "snake_difficulty=" + difficulty + "; path=/";
+            
+            
+            window.location.href = "snake_game.html";
+        }
+    </script>
+</body>
+</html>

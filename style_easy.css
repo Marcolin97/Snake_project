@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+
+
+#game-container {
+    position: relative;
+    border: 1px solid white;
+    margin-top: 5%; 
+    display: block;
+}
+
+
+#score{
+    position:absolute;
+    top:10px;
+    left:50%;
+}
